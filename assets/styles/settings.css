@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "alice";
+  src: url(../fonts/Alice-Regular.ttf);
+}
+@font-face {
+  font-family: "amarante";
+  src: url(../fonts/Amarante-Regular.ttf);
+}
+@font-face {
+  font-family: "maitree";
+  src: url(../fonts/Maitree-Light.ttf);
+}
+
+:root {
+  --main-bg-color: #e1d8d6;
+  --title-color: #b6beb8;
+  --under-title-color: #5b6353;
+  --text-color: rgb(28, 28, 28);
+  --bg-color: rgb(243, 239, 239);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: "maitree", serif;
+  background-color: var(--bg-color);
+}
+
+h3 {
+  font-family: "amarante";
+  font-size: 1.5rem;
+}

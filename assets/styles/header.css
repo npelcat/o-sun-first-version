@@ -1,0 +1,39 @@
+.title {
+    font-family: "alice", sans-serif;
+    font-size: 3.5rem;
+    color: var(--title-color);
+    padding: 70px 0 50px 0;
+    text-shadow: var(--main-bg-color) 3px 3px 0;
+  }
+  
+  .intro-title {
+    font-family: "amarante", sans-serif;
+    color: var(--under-title-color);
+    padding: 40px;
+    font-size: 2rem;
+  }
+  
+  .header-logo {
+    max-width: 50%;
+    max-height: 300px;
+    margin: auto;
+  }
+  
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--title-color);
+    color: var(--text-color);
+    padding: 20px 50px;
+  }
+  
+  .oceane-photo {
+    background: url(../img/istockphoto-1198100351-612x612.jpg) center/cover;
+    width: 400px;
+    max-width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 100px;
+  }
+  

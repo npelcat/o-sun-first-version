@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "alice";
+  src: url(../fonts/Alice-Regular.ttf);
+}
+@font-face {
+  font-family: "amarante";
+  src: url(../fonts/Amarante-Regular.ttf);
+}
+@font-face {
+  font-family: "maitree";
+  src: url(../fonts/Maitree-Light.ttf);
+}
+
+:root {
+  --main-bg-color: #e1d8d6;
+  --title-color: #b6beb8;
+  --under-title-color: #5b6353;
+  --text-color: rgb(28, 28, 28);
+  --bg-color: rgb(243, 239, 239);
+}
+
+#side-bar {
+  position: absolute;
+  width: 230px;
+  height: 100%;
+  background: var(--main-bg-color);
+  top: 0;
+  left: -230px;
+  transition: 0.5s ease-out;
+  z-index: 4;
+}
+.toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 240px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--under-title-color);
+  display: block;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+li {
+  color: var(--under-title-color);
+  list-style: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-left: 5px;
+  font-family: alice;
+}
+li:hover {
+  background: var(--under-title-color);
+  color: var(--bg-color);
+}
+
+/* Pour avoir la priorité (classe sur ID), pointer l'ID HTML que l'on veut modifier puis lui donner la classe voulue.
+  (ATTENTION à ne pas mettre d'espace entre les deux, sinon css comprend : l'id sidebar a un enfant qui est .active) */
+#side-bar.active {
+  left: 0;
+}
+
+/* HAMBURGER MENU QUI SE TRANSFORME EN CROIX LORSQUE LA SIDE BAR EST SORTIE ==> */
+/* 1.Toucher les span lorsque la classe active est sortie (.active) */
+/* 2.La position absolute permet de mettre les 3 span les uns sur les autres */
+.active span {
+  position: absolute;
+}
+/* 3.Toucher les différents enfants (:nth-child()) lorsque la classe .active est sortie. */
+.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.active span:nth-child(2) {
+  opacity: 0;
+}
+.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* ~ = Si .active existe, alors effectue cette action sur son frère .content (siblings = frère et soeur) : */
+.active ~ .content {
+  opacity: 0.3;
+}

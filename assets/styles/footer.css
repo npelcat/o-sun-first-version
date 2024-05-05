@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--under-title-color);
+  color: var(--bg-color);
+}
+
+.footer-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact {
+  padding-right: 50px ;
+}
+
+.social-media a {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.footer-bottom {
+  padding: 20px;
+  font-style: italic;
+  font-size: 0.8rem;
+}

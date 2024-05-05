@@ -1,0 +1,128 @@
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.who-I-am {
+  background: url(../img/journal-chat-photos-captivantes-pour-amoureux-chatons_563241-3948.jpg) center/cover;
+  margin: 20px;
+  padding: 80px 50px;
+  border-radius: 300px;
+}
+.my-ethics {
+  background: url(../img/04-4-social-composer-groupe.jpg) center/cover;
+  margin: 20px;
+  padding: 80px 50px;
+  border-radius: 300px;
+}
+
+.booking {
+  background: url(../img/35448317-ai-genere-magnifique-chien-dans-la-nature-contexte-ai-genere-gratuit-photo.jpg) center/cover;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  padding: 80px 50px;
+  border-radius: 300px;
+  color: var(--under-title-color);
+}
+
+.who-I-am a, .my-ethics a, .booking a {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+  color: var(--under-title-color);
+  background-color: rgba(245, 245, 245, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.who-I-am a:hover, .my-ethics a:hover, .booking a:hover {
+  background-color: var(--under-title-color);
+  color: var(--bg-color);
+} 
+
+.my-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-title {
+  font-family: "alice", sans-serif;
+  font-size: 2.5rem;
+  color: var(--under-title-color);
+  text-shadow: var(--main-bg-color) 2px 2px 0;
+  padding: 20px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px 10px;
+  max-width: 700px;
+}
+
+.service-container h3 {
+  font-family: "alice", sans-serif;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  text-shadow: var(--under-title-color) 1px 1px 0;
+}
+
+.service-container img {
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+
+.text-container button {
+  margin: 40px 0 20px 0;
+  background-color: var(--bg-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.text-container button:hover {
+  cursor: pointer;
+  background-color: var(--title-color);
+  color: var(--bg-color);
+}
+
+.testimonials {
+  background: url("../img/forest-56930_1280.jpg");
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  margin: 100px 0;
+}
+
+#buttonTesti {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "amarante", sans-serif;
+  font-size: 2rem;
+  color: var(--bg-color);
+  text-shadow: var(--under-title-color) 1px 1px 0;
+  background-color: rgba(245, 245, 245, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+#buttonTesti:hover {
+  background-color: rgba(245, 245, 245, 0.7);
+  color: var(--under-title-color);
+}
+
+
+/* MEDIA-QUERIES */
+
+
+
