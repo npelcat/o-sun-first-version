@@ -29,11 +29,12 @@
   }
   
   .oceane-photo {
-    background: url(../img/istockphoto-1198100351-612x612.jpg) center/cover;
-    width: 400px;
-    max-width: 100px;
+    background: url(../img/oceane/oce-dogs/280859275_1460786831038584_3178236038909394168_n.jpg) center/cover;
+    width: 300px;
+    max-width: 300px;
+    min-width: 150px;
     height: 100px;
     margin: 20px;
-    border-radius: 100px;
+    border-radius: 30px;
   }
   
